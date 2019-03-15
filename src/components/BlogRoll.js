@@ -11,26 +11,22 @@ class BlogRoll extends React.Component {
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div className="is-parent column is-12" key={post.id}>
               <article className="tile is-child box notification">
                 <p>
                   <Link
-                    className="title has-text-primary is-size-4"
+                    className="title has-text-primary is-size-1"
                     to={post.fields.slug}
                   >
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
                 </p>
                 <p>
-                  {post.excerpt}
-                  <br />
+                  {post.frontmatter.description}
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
+                    Jatka lukemista →
                   </Link>
                 </p>
               </article>
@@ -66,8 +62,9 @@ export default () => (
               }
               frontmatter {
                 title
+                description
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "MMMM Do, YYYY")
               }
             }
           }
