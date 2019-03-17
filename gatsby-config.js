@@ -2,9 +2,9 @@ var proxy = require("http-proxy-middleware")
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Kriittisen suunnittelun kilta',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Kriittisen suunnittelun kilta on yhteistö, jonka toiminnan kautta kriittisestä suunnittelusta kiinnostuneet alan ammattilaiset ja opiskelijat löytävät toisensa, aktivoituvat ja luovat yhdessä kriittisen suunnittelun käytäntöä ja keskustelua Suomeen.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

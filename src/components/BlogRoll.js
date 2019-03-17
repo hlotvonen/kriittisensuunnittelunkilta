@@ -15,18 +15,18 @@ class BlogRoll extends React.Component {
               <article className="tile is-child box notification">
                 <p>
                   <Link
-                    className="title has-text-primary is-size-1"
+                    className="title is-size-1"
                     to={post.fields.slug}
                   >
                     {post.frontmatter.title}
                   </Link>
-                  <span> &bull; </span>
                 </p>
                 <p>
                   {post.frontmatter.description}
                   <br />
+                  <br />
                   <Link className="button" to={post.fields.slug}>
-                    Jatka lukemista →
+                    Lue teksti →
                   </Link>
                 </p>
               </article>
